@@ -1,0 +1,10 @@
+作者：造梦C君
+
+内部Github教程：
+1.打开Git-Bash，"邮箱"处输入你自己的邮箱并粘贴：ssh-keygen -t ed25519 -C "邮箱"
+2.一路按回车
+3.在C盘->用户->"用户名"->.ssh文件夹下找到id_ed25519.pub并将其复制到Github的Setting里的SSH keys。
+4.在Git-Bash中启动代理：eval "$(ssh-agent -s)"
+5.Git-Bash中输入：ssh-add
+6.git clone 仓库的ssh地址。 如果能够成功拉取下来则完成配置。
+
